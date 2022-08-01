@@ -20,19 +20,45 @@
                                 <rect key="frame" x="157.5" y="432.5" width="99" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="First button"/>
+                                <connections>
+                                    <action selector="showMessage" destination="BYZ-38-t0r" eventType="touchUpInside" id="unN-kN-Civ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaQ-rq-CFC">
+                                <rect key="frame" x="136" y="521" width="143" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show Next Screen"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="7eZ-6H-MMy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Nd-Kc-0sV"/>
+                            <constraint firstItem="yaQ-rq-CFC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YSB-S2-1dM"/>
+                            <constraint firstItem="yaQ-rq-CFC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bBJ-8M-Kfr"/>
                             <constraint firstItem="7eZ-6H-MMy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="btQ-EY-sXd"/>
+                            <constraint firstItem="yaQ-rq-CFC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="o61-vO-PaV"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20" y="84"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Y4i-2V-iJa">
+            <objects>
+                <viewController id="o1f-fr-l88" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4eS-Cd-QoV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="KGg-nf-fPb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XGh-VB-M4R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="862" y="84"/>
         </scene>
     </scenes>
     <resources>
