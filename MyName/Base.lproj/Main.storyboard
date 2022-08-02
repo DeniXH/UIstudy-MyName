@@ -24,20 +24,24 @@
                                     <action selector="showMessage" destination="BYZ-38-t0r" eventType="touchUpInside" id="unN-kN-Civ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaQ-rq-CFC">
-                                <rect key="frame" x="136" y="521" width="143" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaQ-rq-CFC">
+                                <rect key="frame" x="145" y="467.5" width="143" height="31"/>
+                                <size key="titleShadowOffset" width="50" height="50"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Show Next Screen"/>
+                                <connections>
+                                    <segue destination="o1f-fr-l88" kind="show" id="HAd-4E-wdB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="7eZ-6H-MMy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Nd-Kc-0sV"/>
-                            <constraint firstItem="yaQ-rq-CFC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YSB-S2-1dM"/>
-                            <constraint firstItem="yaQ-rq-CFC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bBJ-8M-Kfr"/>
+                            <constraint firstItem="yaQ-rq-CFC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="9.5" id="YSB-S2-1dM"/>
+                            <constraint firstItem="yaQ-rq-CFC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="9.5" id="bBJ-8M-Kfr"/>
                             <constraint firstItem="7eZ-6H-MMy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="btQ-EY-sXd"/>
-                            <constraint firstItem="yaQ-rq-CFC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="o61-vO-PaV"/>
+                            <constraint firstItem="yaQ-rq-CFC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="35" id="hfE-77-wD3"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -45,16 +49,33 @@
             </objects>
             <point key="canvasLocation" x="20" y="84"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="Y4i-2V-iJa">
             <objects>
-                <viewController id="o1f-fr-l88" sceneMemberID="viewController">
+                <viewController id="o1f-fr-l88" customClass="SecondViewController" customModule="MyName" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4eS-Cd-QoV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8a-Dq-mgb">
+                                <rect key="frame" x="160" y="405.5" width="94" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show Alert">
+                                    <color key="baseForegroundColor" systemColor="linkColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="showAlert" destination="o1f-fr-l88" eventType="touchUpInside" id="Gno-UB-FY1"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="KGg-nf-fPb"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.56725635359841198" green="0.7693973183631897" blue="0.70294788391531116" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="H8a-Dq-mgb" firstAttribute="centerY" secondItem="4eS-Cd-QoV" secondAttribute="centerY" id="4Y2-Xh-d15"/>
+                            <constraint firstItem="H8a-Dq-mgb" firstAttribute="centerX" secondItem="4eS-Cd-QoV" secondAttribute="centerX" id="ykt-5p-Ttc"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="inc-lA-1hr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XGh-VB-M4R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,6 +83,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
