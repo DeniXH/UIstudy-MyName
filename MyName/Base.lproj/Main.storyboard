@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -58,10 +59,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8a-Dq-mgb">
-                                <rect key="frame" x="160" y="405.5" width="94" height="31"/>
+                                <rect key="frame" x="145.5" y="405.5" width="123" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Show Alert">
-                                    <color key="baseForegroundColor" systemColor="linkColor"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Show Alert">
+                                    <imageReference key="image" image="graduationcap" catalog="system" symbolScale="large" renderingMode="original"/>
+                                    <color key="baseForegroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="showAlert" destination="o1f-fr-l88" eventType="touchUpInside" id="Gno-UB-FY1"/>
@@ -83,10 +85,11 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="graduationcap" catalog="system" width="128" height="106"/>
         <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
