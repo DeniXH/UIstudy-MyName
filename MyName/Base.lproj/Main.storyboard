@@ -69,19 +69,51 @@
                                     <action selector="showAlert" destination="o1f-fr-l88" eventType="touchUpInside" id="Gno-UB-FY1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0i-7X-Eco">
+                                <rect key="frame" x="283" y="89" width="58" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Right"/>
+                                <connections>
+                                    <action selector="changeLabelText:" destination="o1f-fr-l88" eventType="touchUpInside" id="I67-qG-gHX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fl-A8-rVJ">
+                                <rect key="frame" x="146" y="99.5" width="41.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00J-UF-7JN">
+                                <rect key="frame" x="73" y="89" width="49.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Left"/>
+                                <connections>
+                                    <action selector="changeLabelText:" destination="o1f-fr-l88" eventType="touchUpInside" id="kI3-qd-ybk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KGg-nf-fPb"/>
                         <color key="backgroundColor" red="0.56725635359841198" green="0.7693973183631897" blue="0.70294788391531116" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="H8a-Dq-mgb" firstAttribute="centerY" secondItem="4eS-Cd-QoV" secondAttribute="centerY" id="4Y2-Xh-d15"/>
+                            <constraint firstItem="w0i-7X-Eco" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2fl-A8-rVJ" secondAttribute="trailing" constant="8" symbolic="YES" id="NuH-cg-7rn"/>
+                            <constraint firstItem="2fl-A8-rVJ" firstAttribute="leading" secondItem="00J-UF-7JN" secondAttribute="trailing" constant="23.5" id="TbY-8J-dA2"/>
+                            <constraint firstItem="00J-UF-7JN" firstAttribute="baseline" secondItem="w0i-7X-Eco" secondAttribute="baseline" id="fOX-4b-r7A"/>
+                            <constraint firstItem="00J-UF-7JN" firstAttribute="top" secondItem="KGg-nf-fPb" secondAttribute="top" constant="89" id="hpt-gX-YFC"/>
+                            <constraint firstItem="w0i-7X-Eco" firstAttribute="centerX" secondItem="4eS-Cd-QoV" secondAttribute="centerX" constant="105" id="jfr-HW-xNg"/>
+                            <constraint firstItem="00J-UF-7JN" firstAttribute="centerX" secondItem="4eS-Cd-QoV" secondAttribute="centerX" constant="-109.25" id="qZo-CV-bs2"/>
+                            <constraint firstItem="00J-UF-7JN" firstAttribute="bottom" secondItem="2fl-A8-rVJ" secondAttribute="bottom" id="uaY-bX-uc6"/>
                             <constraint firstItem="H8a-Dq-mgb" firstAttribute="centerX" secondItem="4eS-Cd-QoV" secondAttribute="centerX" id="ykt-5p-Ttc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="inc-lA-1hr"/>
+                    <connections>
+                        <outlet property="myLabel" destination="2fl-A8-rVJ" id="dXh-eB-LF9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XGh-VB-M4R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="862" y="84"/>
+            <point key="canvasLocation" x="860.86956521739137" y="83.705357142857139"/>
         </scene>
     </scenes>
     <resources>

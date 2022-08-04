@@ -8,6 +8,13 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+
+    @IBOutlet weak var myLabel: UILabel!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+
     @IBAction func showAlert(){
         let alertContorller = UIAlertController(
             title: "Welcome to my App",
@@ -21,6 +28,16 @@ class SecondViewController: UIViewController {
         alertContorller.addAction(actionClouse)
         self.present(alertContorller, animated: true, completion: nil)
     }
+
+
+    @IBAction func changeLabelText(_ sender: UIButton) {
+        if let buttonText = sender.titleLabel!.text {
+            self.myLabel.text = "\(buttonText) button was pressed"
+            sender.contentHorizontalAlignment = .left
+        }
+    }
+
+
     /*
     // MARK: - Navigation
 

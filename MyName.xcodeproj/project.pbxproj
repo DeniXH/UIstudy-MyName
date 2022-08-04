@@ -42,7 +42,6 @@
 		92928D6C2892F025007BB8FF = {
 			isa = PBXGroup;
 			children = (
-				92928DAC28990CC2007BB8FF /* SecondViewController.swift */,
 				92928D772892F025007BB8FF /* MyName */,
 				92928D762892F025007BB8FF /* Products */,
 			);
@@ -59,6 +58,7 @@
 		92928D772892F025007BB8FF /* MyName */ = {
 			isa = PBXGroup;
 			children = (
+				92928DAC28990CC2007BB8FF /* SecondViewController.swift */,
 				92928D782892F025007BB8FF /* AppDelegate.swift */,
 				92928D7A2892F025007BB8FF /* SceneDelegate.swift */,
 				92928D7C2892F025007BB8FF /* ViewController.swift */,
